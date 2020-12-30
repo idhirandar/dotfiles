@@ -1,0 +1,11 @@
+1.2
+- added "light" variants
+- removed "locked" variants
+- minor improvements
+
+1.1
+- minor improvements
+
+1.0
+- first release
+
