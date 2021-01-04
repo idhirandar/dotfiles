@@ -33,9 +33,14 @@ alias v="vim -S ~/.vimrc"
 alias df="df -Th"
 alias ls="ls --size --human-readable --color"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-PS1="\e[36m\@\w\\$\[$(tput sgr0)\] "
-#export PS1="\@\w\\$ \n\[$(tput sgr0)\]"
-
+PS1="\e[36;32m\@:[$(tput sgr0)\]\W]⚡~ "
+#PS1="\e[36;36m\@: [\W] [$(tput sgr0)\]⚡] ▶️  "
+#PS1="\e[36;36m\@:[\W]\\$ \[$(tput sgr0)\]|~ ⚡ "
+#PS1="\e[36;36m\@: [\w]\\$ \[$(tput sgr0)\] |~ ⚡ "               #-------- all right
+#PS1="\e[36;36m\@\w\\ $ ~ ⚡ "
+#PS1="\@\w\\$ \n\[$(tput sgr0)\]"
+#PS1="\@\w\\$ \[$(tput sgr0)\]"
+#PS1="\e[30;48;5;32m \h \e[0;38;5;82m \@ \e[82m:~ " #---blue+green
 
 #======================================================#
 ##          this alias for bakup dotfiles             ##
@@ -58,5 +63,8 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 #PS1='\e[033;01;32m \h \e[033;01;32m \@' ------------------which color i want
 #PS1="\e[30;48;5;32m \h \e[0;38;5;82m \@ \e[82m:~ " #---blue+green
 ##45m is a nice color
+
+
+
 
 #PS1="\e[30;48;5;45m \w \e[0;38;5;071m \@ \e[071m🎅 \#:~ "
