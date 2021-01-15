@@ -32,7 +32,7 @@ alias pleas_upgrade="sudo apt upgrade"
 alias ll="ls -alZ"
 #alias vim="vim -S ~/.vimrc"
 #alias v="vim -S ~/.vimrc"
-#alias df="df -Th"
+alias df="df -Th"
 alias ls="ls --size --human-readable --color"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
