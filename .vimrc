@@ -22,7 +22,7 @@ nnoremap <silent> <expr> <F6> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufe
 "let NERDTreeMapOpenInTab='<ENTER>'
 let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
 
-"Plug 'nathanaelkane/vim-indent-guides'
+Plug 'nathanaelkane/vim-indent-guides'
 "let g:indent_guides_guide_size = 1
 "let g:indent_guides_color_change_percent = 3
 "let g:indent_guides_enable_on_vim_startup = 1
