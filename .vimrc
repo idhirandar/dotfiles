@@ -132,7 +132,7 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " Visual Mode Orange Background, Black Text
 hi Visual          guifg=#000000 guibg=#FD971F
 
-" Default Colors for CursorLine
+" Default Colors for CursorLine.
 highlight CursorLine guibg=#3E3D32
 highlight Cursor guibg=#A6E22E
 
