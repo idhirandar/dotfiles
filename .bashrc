@@ -85,7 +85,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-#==============================================================================
+##########################  CUSTOM BASH PROMPT ####################
 PS1='[\[\033[36m\]\W\[\033[0m\]]\[\033[32m\]:>>\[\033[0m\] '
 
 ############################# CUSTOM ALIAS ########################

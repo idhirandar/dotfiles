@@ -28,9 +28,9 @@ Plug 'sjl/badwolf'
 "+================================+================+
 Plug 'preservim/nerdtree' |
 let mapleader = ","
-"nmap <F6> :NERDTreeToggle<CR>                      =========NERDTree F6 key config
+"nmap <F6> :NERDTreeToggle<CR>                      ###################### NERDTree F6 key config
 nnoremap <silent> <expr> <F6> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
-"let NERDTreeMapOpenInTab='<ENTER>                  =========open in newtab
+"let NERDTreeMapOpenInTab='<ENTER>                  ##################### open in newtab
 let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
 
 
