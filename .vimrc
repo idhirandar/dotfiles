@@ -15,8 +15,6 @@ let g:airline_powerline_fonts = "1"
 let g:airline_extensions = []
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-
-
 "
 "| multiplele DIFFRENT THEME FOR Vim | vim-code-dark | dracula | badwolf |
 "+===================================+===============+=========+=========+
@@ -28,9 +26,9 @@ Plug 'sjl/badwolf'
 "+================================+================+
 Plug 'preservim/nerdtree' |
 let mapleader = ","
-"nmap <F6> :NERDTreeToggle<CR>                      ###################### NERDTree F6 key config
+"nmap <F6> :NERDTreeToggle<CR>                      =========NERDTree F6 key config
 nnoremap <silent> <expr> <F6> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
-"let NERDTreeMapOpenInTab='<ENTER>                  ##################### open in newtab
+"let NERDTreeMapOpenInTab='<ENTER>                  =========open in newtab
 let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
 
 
@@ -65,10 +63,9 @@ inoreabbrev <expr> __
 " Initialize plugin system
 call plug#end()
 
-colorscheme codedark
-
-"set tergui color
+colorscheme codedark  "vim colorscheme
 set termguicolors
+"set tergui color
 
 set cursorline
 set number 
