@@ -1,0 +1,10 @@
+dash-to-dock@micxgx.gmail.com
+caffeine@patapon.info
+compiz-alike-magic-lamp-effect@hermes83.github.com
+gsconnect@andyholmes.github.io
+just-perfection-desktop@just-perfection
+AlphabeticalAppGrid@stuarthayhurst
+system-monitor@gnome-shell-extensions.gcampax.github.com
+simple-tiling@domoel
+search-light@icedman.github.com
+background-logo@fedorahosted.org
