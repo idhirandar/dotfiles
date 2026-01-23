@@ -1,0 +1,338 @@
+[Bluetooth-Battery-Meter]
+device-list=['{"path":"/org/bluez/hci0/dev_84_0F_2A_2E_9A_84","icon":"audio-headset","alias":"realme Buds Air 5","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"enhanced-device":null,"connected-time":1758953147,"disconnected-time":1758949330}']
+
+[audio-visual]
+bar-count=8
+max-height=38
+use-gradient=false
+
+[bluetooth_battery_indicator]
+devices=['{"name":"5B10W13931","mac":"2220"}', '{"name":"realme Buds Air 5","mac":"84:0F:2A:2E:9A:84"}']
+
+[blur-my-shell]
+settings-version=2
+
+[blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[blur-my-shell/coverflow-alt-tab]
+pipeline='pipeline_default'
+
+[blur-my-shell/dash-to-dock]
+blur=false
+brightness=0.59999999999999998
+pipeline='pipeline_default_rounded'
+sigma=30
+static-blur=false
+style-dash-to-dock=0
+
+[blur-my-shell/lockscreen]
+pipeline='pipeline_default'
+
+[blur-my-shell/overview]
+pipeline='pipeline_default'
+
+[blur-my-shell/panel]
+blur=false
+brightness=0.59999999999999998
+pipeline='pipeline_default'
+sigma=30
+
+[blur-my-shell/screenshot]
+pipeline='pipeline_default'
+
+[blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[caffeine]
+cli-toggle=false
+indicator-position-max=1
+user-enabled=true
+
+[com/github/hermes83/compiz-windows-effect]
+friction=7.2999999999999998
+y-tiles=5.0
+
+[dash-to-dock]
+animation-time=0.20000000000000001
+apply-custom-theme=true
+autohide=true
+autohide-in-fullscreen=false
+background-color='rgb(28,113,216)'
+background-opacity=0.80000000000000004
+click-action='minimize'
+custom-background-color=false
+custom-theme-shrink=true
+customize-alphas=false
+dash-max-icon-size=44
+disable-overview-on-startup=true
+dock-position='BOTTOM'
+height-fraction=0.87
+hide-delay=0.20000000000000001
+hide-tooltip=false
+icon-size-fixed=true
+intellihide=true
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+max-alpha=0.58999999999999997
+min-alpha=0.56000000000000005
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+pressure-threshold=100.0
+require-pressure-to-show=true
+show-delay=0.25
+show-dock-urgent-notify=true
+show-show-apps-button=false
+transparency-mode='DEFAULT'
+workspace-agnostic-urgent-windows=true
+
+[dash-to-panel]
+extension-version=72
+panel-anchors='{}'
+panel-element-positions='{}'
+panel-lengths='{}'
+panel-positions='{}'
+panel-sizes='{}'
+prefs-opened=false
+
+[forge]
+auto-split-enabled=true
+css-last-update=uint32 37
+dnd-center-layout='swap'
+float-always-on-top-enabled=true
+focus-border-toggle=true
+focus-on-hover-enabled=false
+move-pointer-focus-enabled=false
+stacked-tiling-mode-enabled=true
+tabbed-tiling-mode-enabled=true
+tiling-mode-enabled=false
+window-gap-size=uint32 3
+window-gap-size-increment=uint32 1
+
+[forge/keybindings]
+con-split-horizontal=['<Super>z']
+con-split-layout-toggle=['<Super>g']
+con-split-vertical=['<Super>v']
+con-stacked-layout-toggle=['<Shift><Super>s']
+con-tabbed-layout-toggle=['<Shift><Super>t']
+con-tabbed-showtab-decoration-toggle=['<Control><Alt>y']
+focus-border-toggle=['<Super>x']
+mod-mask-mouse-tile='None'
+prefs-tiling-toggle=['<Super>w']
+window-focus-down=['<Super>j']
+window-focus-left=@as []
+window-focus-right=['<Super>l']
+window-focus-up=['<Super>k']
+window-gap-size-decrease=['<Control><Super>minus']
+window-gap-size-increase=['<Control><Super>plus']
+window-move-down=['<Shift><Super>j']
+window-move-left=['<Shift><Super>h']
+window-move-right=['<Shift><Super>l']
+window-move-up=['<Shift><Super>k']
+window-resize-bottom-decrease=['<Shift><Control><Super>i']
+window-resize-bottom-increase=['<Control><Super>u']
+window-resize-left-decrease=['<Shift><Control><Super>o']
+window-resize-left-increase=['<Control><Super>y']
+window-resize-right-decrease=['<Shift><Control><Super>y']
+window-resize-right-increase=['<Control><Super>o']
+window-resize-top-decrease=['<Shift><Control><Super>u']
+window-resize-top-increase=['<Control><Super>i']
+window-snap-center=['<Control><Alt>c']
+window-snap-one-third-left=['<Control><Alt>d']
+window-snap-one-third-right=['<Control><Alt>g']
+window-snap-two-third-left=['<Control><Alt>e']
+window-snap-two-third-right=['<Control><Alt>t']
+window-swap-down=['<Control><Super>j']
+window-swap-last-active=['<Super>Return']
+window-swap-left=['<Control><Super>h']
+window-swap-right=['<Control><Super>l']
+window-swap-up=['<Control><Super>k']
+window-toggle-always-float=['<Shift><Super>c']
+window-toggle-float=['<Super>c']
+workspace-active-tile-toggle=['<Shift><Super>w']
+
+[gnome-mosaic]
+mosaic-cached-state=''
+smart-gaps=true
+snap-to-grid=true
+tile-by-default=false
+
+[gnome-ui-tune]
+increase-thumbnails-size='100%'
+
+[gsconnect]
+devices=['1e0e9ca9_3add_42a3_8fd1_f57190f56840', 'c0f8a3d3e7a7418b9dd4a3fb53b92379']
+enabled=true
+missing-openssl=false
+name='fedora'
+show-indicators=true
+
+[gsconnect/device/1e0e9ca9_3add_42a3_8fd1_f57190f56840]
+certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBlDCCATmgAwIBAgIBATAKBggqhkjOPQQDBDBTMS0wKwYDVQQDDCQxZTBlOWNh\nOV8zYWRkXzQyYTNfOGZkMV9mNTcxOTBmNTY4NDAxFDASBgNVBAsMC0tERSBDb25u\nZWN0MQwwCgYDVQQKDANLREUwHhcNMjQwMzAxMTgzMDAwWhcNMzUwMzAxMTgzMDAw\nWjBTMS0wKwYDVQQDDCQxZTBlOWNhOV8zYWRkXzQyYTNfOGZkMV9mNTcxOTBmNTY4\nNDAxFDASBgNVBAsMC0tERSBDb25uZWN0MQwwCgYDVQQKDANLREUwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQFlcJmxfhMmBQpbyxvBE9135B5piL3FDdGSAfojgjX\n0PFDqCDNgd4P21PRAP3VG0kwqpGKz6D2CKC07zdM8VBsMAoGCCqGSM49BAMEA0kA\nMEYCIQDMi/GpyS/IORz3qqnufSVbhW1fHWeWjJb9av6YWWLPZQIhAIYTbzKvs0LQ\nftylMhNnT4Ez0+1NlixH6KIfbFb7RykF\n-----END CERTIFICATE-----\n'
+incoming-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request_mute']
+last-connection='lan://192.168.1.69:1716'
+name='OnePlus 7T Pro'
+outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
+paired=true
+supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
+type='phone'
+
+[gsconnect/device/1e0e9ca9_3add_42a3_8fd1_f57190f56840/plugin/battery]
+custom-battery-notification-value=uint32 80
+
+[gsconnect/device/1e0e9ca9_3add_42a3_8fd1_f57190f56840/plugin/notification]
+applications='{"Power":{"iconName":"","enabled":true},"Terminal":{"iconName":"org.gnome.Ptyxis-symbolic","enabled":true},"Software":{"iconName":"system-run-symbolic","enabled":true},"Problem Reporting":{"iconName":"face-sad-symbolic","enabled":true},"Evolution":{"iconName":"evolution","enabled":true},"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Bottles":{"iconName":"com.usebottles.bottles","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"materialgram":{"iconName":"io.github.kukuruzka165.materialgram","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Firefox":{"iconName":"","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true},"GNOME":{"iconName":"","enabled":true},"Simplenote":{"iconName":"","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"Geary":{"iconName":"system-run-symbolic","enabled":true},"Mailspring":{"iconName":"","enabled":true},"Online Accounts":{"iconName":"dialog-warning","enabled":true},"Fragments":{"iconName":"folder-download-symbolic","enabled":true},"balenaEtcher":{"iconName":"","enabled":true},"Disk Space":{"iconName":"","enabled":true}}'
+
+[gsconnect/device/1e0e9ca9_3add_42a3_8fd1_f57190f56840/plugin/share]
+receive-directory='/home/dhirandar/Downloads'
+
+[gsconnect/device/c0f8a3d3e7a7418b9dd4a3fb53b92379]
+certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBjDCCATGgAwIBAgIBATAKBggqhkjOPQQDBDBPMSkwJwYDVQQDDCBjMGY4YTNk\nM2U3YTc0MThiOWRkNGEzZmI1M2I5MjM3OTEUMBIGA1UECwwLS0RFIENvbm5lY3Qx\nDDAKBgNVBAoMA0tERTAeFw0yNTAxMTIxODMwMDBaFw0zNjAxMTIxODMwMDBaME8x\nKTAnBgNVBAMMIGMwZjhhM2QzZTdhNzQxOGI5ZGQ0YTNmYjUzYjkyMzc5MRQwEgYD\nVQQLDAtLREUgQ29ubmVjdDEMMAoGA1UECgwDS0RFMFkwEwYHKoZIzj0CAQYIKoZI\nzj0DAQcDQgAE0FKspJmUKAvTWK9W5NvTZbESCSFaOGfxdoL4sjc7E1d/z/hztci4\n+qF4yw3p7l6jFFTpFiyEspdp/a/kkceE1jAKBggqhkjOPQQDBANJADBGAiEAw2J0\nf9/4Zb4ykDs17x6usP8buSi8g27Th6W9lYhSt0ACIQDG8THZWKYWrPpbQ37zl+7p\ns5N7naeTvYbXK5SUgwXIeg==\n-----END CERTIFICATE-----\n'
+incoming-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request_mute']
+last-connection='lan://192.168.1.78:1716'
+name='OnePlus 11 5G'
+outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
+paired=true
+supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
+type='phone'
+
+[gsconnect/device/c0f8a3d3e7a7418b9dd4a3fb53b92379/plugin/battery]
+custom-battery-notification-value=uint32 80
+
+[gsconnect/device/c0f8a3d3e7a7418b9dd4a3fb53b92379/plugin/notification]
+applications='{"Software":{"iconName":"org.gnome.Software","enabled":true},"Power":{"iconName":"","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"Files":{"iconName":"media-optical-symbolic","enabled":true},"Firefox":{"iconName":"","enabled":true},"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"materialgram":{"iconName":"io.github.kukuruzka165.materialgram","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true}}'
+
+[gsconnect/device/c0f8a3d3e7a7418b9dd4a3fb53b92379/plugin/share]
+receive-directory='/home/dhirandar/Downloads'
+
+[gsconnect/messaging]
+window-maximized=false
+window-size=(758, 772)
+
+[gsconnect/preferences]
+window-maximized=false
+window-size=(765, 772)
+
+[gsnap]
+window-margin=2
+
+[gtk4-ding]
+start-corner='top-right'
+
+[just-perfection]
+accent-color-icon=false
+accessibility-menu=true
+activities-button=true
+animation=1
+calendar=true
+clock-menu=true
+clock-menu-position=1
+clock-menu-position-offset=0
+controls-manager-spacing-size=0
+dash-icon-size=0
+events-button=false
+invert-calendar-column-items=true
+notification-banner-position=2
+panel=true
+panel-in-overview=true
+panel-notification-icon=true
+panel-size=0
+power-icon=true
+ripple-box=true
+search=true
+show-apps-button=true
+startup-status=0
+support-notifier-type=0
+theme=false
+top-panel-position=0
+window-demands-attention-focus=false
+window-maximized-on-create=false
+window-picker-icon=true
+workspace=true
+workspace-popup=true
+workspace-wrap-around=false
+workspaces-in-app-grid=true
+world-clock=false
+
+[search-light]
+animation-speed=100.0
+background-color=(0.0, 0.0, 0.0, 0.83333331346511841)
+blur-background=true
+blur-brightness=0.59999999999999998
+blur-sigma=30.0
+border-color=(0.21960784494876862, 0.21960784494876862, 0.23529411852359772, 1.0)
+border-radius=1.072072072072072
+border-thickness=1
+entry-font-size=1
+monitor-count=1
+panel-icon-color=(0.97680002450942993, 0.98275887966156006, 0.99000000953674316, 1.0)
+preferred-monitor=0
+scale-height=0.17999999999999999
+scale-width=0.25
+shortcut-search=['<Control>space']
+show-panel-icon=true
+window-effect=0
+
+[system-monitor]
+show-cpu=false
+show-download=false
+show-memory=false
+show-swap=false
+show-upload=false
+
+[tiling-assistant]
+activate-layout0=@as []
+activate-layout1=@as []
+activate-layout2=@as []
+activate-layout3=@as []
+auto-tile=@as []
+center-window=@as []
+debugging-free-rects=@as []
+debugging-show-tiled-rects=@as []
+default-move-mode=0
+dynamic-keybinding-behavior=3
+focus-hint=0
+focus-hint-color='rgb(53,132,228)'
+import-layout-examples=false
+last-version-installed=53
+maximize-with-gap=true
+restore-window=['<Super>Down']
+search-popup-layout=@as []
+single-screen-gap=2
+tile-bottom-half=['<Super>KP_2']
+tile-bottom-half-ignore-ta=@as []
+tile-bottomleft-quarter=['<Super>KP_1']
+tile-bottomleft-quarter-ignore-ta=@as []
+tile-bottomright-quarter=['<Super>KP_3']
+tile-bottomright-quarter-ignore-ta=@as []
+tile-edit-mode=@as []
+tile-left-half=['<Super>Left', '<Super>KP_4']
+tile-left-half-ignore-ta=@as []
+tile-maximize=['<Super>Up', '<Super>KP_5']
+tile-maximize-horizontally=@as []
+tile-maximize-vertically=@as []
+tile-right-half=['<Super>Right', '<Super>KP_6']
+tile-right-half-ignore-ta=@as []
+tile-top-half=['<Super>KP_8']
+tile-top-half-ignore-ta=@as []
+tile-topleft-quarter=['<Super>KP_7']
+tile-topleft-quarter-ignore-ta=@as []
+tile-topright-quarter=['<Super>KP_9']
+tile-topright-quarter-ignore-ta=@as []
+tiling-popup-all-workspace=true
+toggle-always-on-top=@as []
+toggle-tiling-popup=@as []
+window-gap=2
+
+[tilingshell]
+enable-autotiling=true
+enable-window-border=true
+last-version-name-installed='17.0'
+layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.22,"height":1,"groups":[1]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[1,2]},{"x":0.78,"y":0,"width":0.22,"height":1,"groups":[2]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]}]'
+overridden-settings='{}'
+selected-layouts=[['Layout 1'], ['Layout 1'], ['Layout 1'], ['Layout 1']]
+window-border-width=uint32 1
+
+[user-theme]
+name=''

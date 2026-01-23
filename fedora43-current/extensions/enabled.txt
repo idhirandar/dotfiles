@@ -1,7 +1,0 @@
-dash-to-dock@micxgx.gmail.com
-caffeine@patapon.info
-compiz-alike-magic-lamp-effect@hermes83.github.com
-gsconnect@andyholmes.github.io
-just-perfection-desktop@just-perfection
-AlphabeticalAppGrid@stuarthayhurst
-simple-tiling@domoel
