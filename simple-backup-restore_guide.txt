@@ -1,0 +1,165 @@
+#!/usr/bin/env bash
+# =============================================================================
+# dotfiles-backup-restore-commands.sh
+# =============================================================================
+#
+# This file contains ALL backup and restore commands we discussed.
+# They are grouped in sections with clear comments.
+#
+# INSTRUCTIONS:
+#   1. cd into your dotfiles folder first
+#      cd ~/Documents/myGit_workDIR/dotfiles
+#
+#   2. To BACKUP everything → run the backup sections in order
+#   3. To RESTORE everything → run the restore sections in order
+#
+#   You can comment out (#) sections you don't want to run.
+#
+#   Most commands are safe to run multiple times (idempotent).
+#   Some overwrite files → make sure you understand what you're doing.
+#
+# Last updated structure: January 2026 – based on your Fedora GNOME setup
+# =============================================================================
+
+# ──────────────────────────────────────────────────────────────────────────────
+# PREPARATION – make sure folders exist
+# ──────────────────────────────────────────────────────────────────────────────
+
+mkdir -p backups flatpaks remmina libreoffice themes icons pip qemu extensions firefox/chrome
+
+# =============================================================================
+#                           B A C K U P   S E C T I O N S
+# =============================================================================
+
+# 1. Basic shell & editor dotfiles
+cp ~/.bashrc                    .bashrc                     2>/dev/null || true
+cp ~/.bash_profile              .bash_profile               2>/dev/null || true
+cp ~/.gitconfig                 .gitconfig                  2>/dev/null || true
+cp ~/.vimrc                     vimrc                       2>/dev/null || true
+cp -r ~/.vim/                   vim/                        2>/dev/null || true
+# If using Neovim instead: cp -r ~/.config/nvim/ .config/nvim/
+
+# 2. Firefox GNOME Theme (only the custom chrome folder)
+mkdir -p firefox/chrome
+PROFILE=$(find ~/.mozilla/firefox/ -maxdepth 1 -type d -name "*.default*" -print -quit 2>/dev/null)
+[ -n "$PROFILE" ] && cp -r "$PROFILE/chrome/"* firefox/chrome/ 2>/dev/null || true
+
+# 3. GNOME / dconf full dump (shortcuts, extensions, themes, fonts, everything)
+dconf dump / > dconf-settings.ini 2>/dev/null || true
+
+# GNOME extensions specific settings only
+dconf dump /org/gnome/shell/extensions/ > extensions/gnome-extensions-full.dconf 2>/dev/null || true
+
+# List of enabled extensions (for reference)
+gnome-extensions list --enabled > extensions/enabled.txt 2>/dev/null || true
+
+# 4. GTK / icon / cursor themes (user level)
+cp -r ~/.themes/* themes/  2>/dev/null || true
+cp -r ~/.icons/*  icons/   2>/dev/null || true
+
+# 5. LibreOffice full user profile
+cp -r ~/.config/libreoffice/* libreoffice/ 2>/dev/null || true
+
+# 6. Remmina (native package version – most common on Fedora)
+cp -r ~/.config/remmina/*     remmina/config/     2>/dev/null || true
+cp -r ~/.local/share/remmina/* remmina/data/      2>/dev/null || true
+
+# If Remmina is Flatpak → uncomment and adjust
+# cp -r ~/.var/app/org.remmina.Remmina/config/remmina/* remmina/flatpak-config/ 2>/dev/null || true
+
+# 7. User-installed pip packages (--user)
+pip list --user --format=freeze > pip/user-pip-requirements.txt 2>/dev/null || true
+
+# 8. Flatpak user-installed apps list
+flatpak list --app --columns=application,ref,origin > backups/flatpak-installed.txt 2>/dev/null || true
+flatpak remotes --show-details > backups/flatpak-remotes.txt 2>/dev/null || true
+
+# 9. Misc important small files
+cp ~/.config/mimeapps.list          .config/mimeapps.list          2>/dev/null || true
+cp ~/.config/pavucontrol.ini        .config/pavucontrol.ini        2>/dev/null || true
+cp ~/.config/monitors.xml           .config/monitors.xml           2>/dev/null || true
+cp ~/.config/user-dirs.dirs         .config/user-dirs.dirs         2>/dev/null || true
+cp ~/.config/background             .config/background             2>/dev/null || true   # if custom wallpaper
+
+# 10. QEMU / libvirt user-level configs (optional – VMs themselves are elsewhere)
+cp -r ~/.config/libvirt/*           qemu/user/config/              2>/dev/null || true
+cp -r ~/.local/share/libvirt/*      qemu/user/share/               2>/dev/null || true
+
+# System-level QEMU VMs (needs sudo – uncomment if you want)
+# sudo cp -r /etc/libvirt/qemu/*    qemu/system-qemu/              2>/dev/null || true
+
+# ──────────────────────────────────────────────────────────────────────────────
+# After backup → commit changes
+# ──────────────────────────────────────────────────────────────────────────────
+# git add .
+# git commit -m "Full backup: $(date +%Y-%m-%d)"
+# git push
+
+# =============================================================================
+#                           R E S T O R E   S E C T I O N S
+# =============================================================================
+
+# 1. Basic shell & editor dotfiles (symlinks preferred)
+ln -sf "$PWD/.bashrc"           ~/.bashrc           2>/dev/null || true
+ln -sf "$PWD/.bash_profile"     ~/.bash_profile     2>/dev/null || true
+ln -sf "$PWD/.gitconfig"        ~/.gitconfig        2>/dev/null || true
+ln -sf "$PWD/vimrc"             ~/.vimrc            2>/dev/null || true
+ln -sfn "$PWD/vim"              ~/.vim              2>/dev/null || true
+
+# 2. Firefox GNOME Theme
+PROFILE=$(find ~/.mozilla/firefox/ -maxdepth 1 -type d -name "*.default*" -print -quit 2>/dev/null)
+if [ -n "$PROFILE" ]; then
+    mkdir -p "$PROFILE/chrome"
+    ln -sfn "$PWD/firefox/chrome/"* "$PROFILE/chrome/" 2>/dev/null || true
+fi
+
+# 3. GNOME / dconf full restore
+if [ -f dconf-settings.ini ]; then
+    dconf load / < dconf-settings.ini
+elif [ -f backups/full-dconf-backup.ini ]; then
+    dconf load / < backups/full-dconf-backup.ini
+fi
+
+# GNOME extensions specific settings
+[ -f extensions/gnome-extensions-full.dconf ] && dconf load /org/gnome/shell/extensions/ < extensions/gnome-extensions-full.dconf
+
+# 4. Themes & icons (copy – not symlink – because many tools expect real files)
+mkdir -p ~/.themes ~/.icons
+cp -r themes/*  ~/.themes/  2>/dev/null || true
+cp -r icons/*   ~/.icons/   2>/dev/null || true
+
+# 5. LibreOffice
+mkdir -p ~/.config/libreoffice
+cp -r libreoffice/* ~/.config/libreoffice/ 2>/dev/null || true
+
+# 6. Remmina
+mkdir -p ~/.config/remmina ~/.local/share/remmina
+cp -r remmina/config/* ~/.config/remmina/     2>/dev/null || true
+cp -r remmina/data/*   ~/.local/share/remmina/ 2>/dev/null || true
+
+# 7. Pip user packages
+[ -f pip/user-pip-requirements.txt ] && pip install --user -r pip/user-pip-requirements.txt
+
+# 8. Flatpak apps reinstall
+if [ -f backups/flatpak-installed.txt ]; then
+    echo "Reinstalling Flatpaks – this may take time..."
+    while read -r line; do
+        app=$(echo "$line" | awk '{print $1}')
+        [ -n "$app" ] && flatpak install --user --noninteractive "$app" || true
+    done < backups/flatpak-installed.txt
+fi
+
+# 9. Misc small files
+ln -sf "$PWD/.config/mimeapps.list"     ~/.config/mimeapps.list     2>/dev/null || true
+ln -sf "$PWD/.config/pavucontrol.ini"   ~/.config/pavucontrol.ini   2>/dev/null || true
+ln -sf "$PWD/.config/monitors.xml"      ~/.config/monitors.xml      2>/dev/null || true
+ln -sf "$PWD/.config/user-dirs.dirs"    ~/.config/user-dirs.dirs    2>/dev/null || true
+
+# After restore – usually needed
+echo ""
+echo "Restore finished."
+echo "Recommended next steps:"
+echo "  • Log out and log back in"
+echo "  • Or restart GNOME Shell: Alt+F2 → type 'r' → Enter"
+echo "  • Some extensions/themes may require re-enabling in Extensions app"
+echo ""
