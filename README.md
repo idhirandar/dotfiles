@@ -1,5 +1,4 @@
 # dotfiles.
-CONFIGRIGATION FILE FROM MULTIPLES PROGRAMS THAT I USED ON MY LINUX DESKTOP 
 ---------------------------------------------------------------------------
 
 # My Dotfiles – ThinkPad X1 Carbon (Fedora)
