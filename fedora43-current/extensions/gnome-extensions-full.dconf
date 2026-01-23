@@ -48,7 +48,7 @@ sigma=30
 
 [caffeine]
 cli-toggle=false
-indicator-position-max=4
+indicator-position-max=1
 user-enabled=true
 
 [com/github/hermes83/compiz-windows-effect]
@@ -162,10 +162,11 @@ tile-by-default=false
 increase-thumbnails-size='100%'
 
 [gsconnect]
-devices=['1e0e9ca9_3add_42a3_8fd1_f57190f56840', 'bed30779ec8f48b28e4f5caf1d157e2c', 'c0f8a3d3e7a7418b9dd4a3fb53b92379']
+devices=['1e0e9ca9_3add_42a3_8fd1_f57190f56840', 'c0f8a3d3e7a7418b9dd4a3fb53b92379']
 enabled=true
 missing-openssl=false
 name='fedora'
+show-indicators=true
 
 [gsconnect/device/1e0e9ca9_3add_42a3_8fd1_f57190f56840]
 certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBlDCCATmgAwIBAgIBATAKBggqhkjOPQQDBDBTMS0wKwYDVQQDDCQxZTBlOWNh\nOV8zYWRkXzQyYTNfOGZkMV9mNTcxOTBmNTY4NDAxFDASBgNVBAsMC0tERSBDb25u\nZWN0MQwwCgYDVQQKDANLREUwHhcNMjQwMzAxMTgzMDAwWhcNMzUwMzAxMTgzMDAw\nWjBTMS0wKwYDVQQDDCQxZTBlOWNhOV8zYWRkXzQyYTNfOGZkMV9mNTcxOTBmNTY4\nNDAxFDASBgNVBAsMC0tERSBDb25uZWN0MQwwCgYDVQQKDANLREUwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQFlcJmxfhMmBQpbyxvBE9135B5piL3FDdGSAfojgjX\n0PFDqCDNgd4P21PRAP3VG0kwqpGKz6D2CKC07zdM8VBsMAoGCCqGSM49BAMEA0kA\nMEYCIQDMi/GpyS/IORz3qqnufSVbhW1fHWeWjJb9av6YWWLPZQIhAIYTbzKvs0LQ\nftylMhNnT4Ez0+1NlixH6KIfbFb7RykF\n-----END CERTIFICATE-----\n'
@@ -186,44 +187,28 @@ applications='{"Power":{"iconName":"","enabled":true},"Terminal":{"iconName":"or
 [gsconnect/device/1e0e9ca9_3add_42a3_8fd1_f57190f56840/plugin/share]
 receive-directory='/home/dhirandar/Downloads'
 
-[gsconnect/device/bed30779ec8f48b28e4f5caf1d157e2c]
-certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBizCCATGgAwIBAgIBATAKBggqhkjOPQQDBDBPMSkwJwYDVQQDDCBiZWQzMDc3\nOWVjOGY0OGIyOGU0ZjVjYWYxZDE1N2UyYzEUMBIGA1UECwwLS0RFIENvbm5lY3Qx\nDDAKBgNVBAoMA0tERTAeFw0yNDEyMzExODMwMDBaFw0zNTEyMzExODMwMDBaME8x\nKTAnBgNVBAMMIGJlZDMwNzc5ZWM4ZjQ4YjI4ZTRmNWNhZjFkMTU3ZTJjMRQwEgYD\nVQQLDAtLREUgQ29ubmVjdDEMMAoGA1UECgwDS0RFMFkwEwYHKoZIzj0CAQYIKoZI\nzj0DAQcDQgAENsXneOgsXDQat82ReJBuw1vHMxpljyfxgDqlPoiq+2imPrX5QiH3\nt3QcEbF0Ya/XsBQeiyjIsqGkJWdnXkJomzAKBggqhkjOPQQDBANIADBFAiAzyIX6\nGOGCh7wvykTHRGe1hGs5SYnvAUhDrJBG1Boc2QIhAPbGviAWjkqKCBeUak5RqhGa\nFkStaZIMHPcbYn6xiPIZ\n-----END CERTIFICATE-----\n'
-incoming-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request_mute']
-last-connection='lan://192.168.1.4:1716'
-name='OnePlus 11 5G'
-outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
-paired=true
-supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
-type='phone'
-
-[gsconnect/device/bed30779ec8f48b28e4f5caf1d157e2c/plugin/battery]
-custom-battery-notification-value=uint32 80
-
-[gsconnect/device/bed30779ec8f48b28e4f5caf1d157e2c/plugin/notification]
-applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"materialgram":{"iconName":"io.github.kukuruzka165.materialgram","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Firefox":{"iconName":"","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"balenaEtcher":{"iconName":"","enabled":true},"Disk Space":{"iconName":"","enabled":true}}'
-
-[gsconnect/device/bed30779ec8f48b28e4f5caf1d157e2c/plugin/share]
-receive-directory='/home/dhirandar/Downloads'
-
 [gsconnect/device/c0f8a3d3e7a7418b9dd4a3fb53b92379]
 certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBjDCCATGgAwIBAgIBATAKBggqhkjOPQQDBDBPMSkwJwYDVQQDDCBjMGY4YTNk\nM2U3YTc0MThiOWRkNGEzZmI1M2I5MjM3OTEUMBIGA1UECwwLS0RFIENvbm5lY3Qx\nDDAKBgNVBAoMA0tERTAeFw0yNTAxMTIxODMwMDBaFw0zNjAxMTIxODMwMDBaME8x\nKTAnBgNVBAMMIGMwZjhhM2QzZTdhNzQxOGI5ZGQ0YTNmYjUzYjkyMzc5MRQwEgYD\nVQQLDAtLREUgQ29ubmVjdDEMMAoGA1UECgwDS0RFMFkwEwYHKoZIzj0CAQYIKoZI\nzj0DAQcDQgAE0FKspJmUKAvTWK9W5NvTZbESCSFaOGfxdoL4sjc7E1d/z/hztci4\n+qF4yw3p7l6jFFTpFiyEspdp/a/kkceE1jAKBggqhkjOPQQDBANJADBGAiEAw2J0\nf9/4Zb4ykDs17x6usP8buSi8g27Th6W9lYhSt0ACIQDG8THZWKYWrPpbQ37zl+7p\ns5N7naeTvYbXK5SUgwXIeg==\n-----END CERTIFICATE-----\n'
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request_mute']
-last-connection='lan://192.168.1.77:1716'
+last-connection='lan://192.168.1.78:1716'
 name='OnePlus 11 5G'
 outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
 paired=true
 supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
 type='phone'
 
+[gsconnect/device/c0f8a3d3e7a7418b9dd4a3fb53b92379/plugin/battery]
+custom-battery-notification-value=uint32 80
+
 [gsconnect/device/c0f8a3d3e7a7418b9dd4a3fb53b92379/plugin/notification]
-applications='{"Software":{"iconName":"org.gnome.Software","enabled":true},"Power":{"iconName":"","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"Files":{"iconName":"media-optical-symbolic","enabled":true},"Firefox":{"iconName":"","enabled":true}}'
+applications='{"Software":{"iconName":"org.gnome.Software","enabled":true},"Power":{"iconName":"","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"Files":{"iconName":"media-optical-symbolic","enabled":true},"Firefox":{"iconName":"","enabled":true},"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"materialgram":{"iconName":"io.github.kukuruzka165.materialgram","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true}}'
 
 [gsconnect/device/c0f8a3d3e7a7418b9dd4a3fb53b92379/plugin/share]
 receive-directory='/home/dhirandar/Downloads'
 
 [gsconnect/messaging]
 window-maximized=false
-window-size=(425, 358)
+window-size=(758, 772)
 
 [gsconnect/preferences]
 window-maximized=false
