@@ -1,2 +1,0 @@
-fedora	Fedora Flatpaks	oci+https://registry.fedoraproject.org	-	-	-	1	system,oci	-	-	-	-
-flathub	Flathub	https://dl.flathub.org/repo/	-	-	/usr/share/flatpak/fedora-flathub.filter	1	system,filtered	Central repository of Flatpak applications	Central repository of Flatpak applications	https://flathub.org/	https://dl.flathub.org/repo/logo.svg
