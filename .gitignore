@@ -1,0 +1,9 @@
+# Temporary files
+*.swp
+*~
+update-*.sh
+*.bak
+backups/$(date +*)/
+
+# Large caches
+libreoffice/4/cache/
