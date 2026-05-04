@@ -1,3 +1,5 @@
-com.mattjakeman.ExtensionManager	com.mattjakeman.ExtensionManager/x86_64/stable	flathub
-io.github.kukuruzka165.materialgram	io.github.kukuruzka165.materialgram/x86_64/stable	flathub
-org.videolan.VLC	org.videolan.VLC/x86_64/stable	flathub
+com.bitwarden.desktop
+com.mattjakeman.ExtensionManager
+io.github.kukuruzka165.materialgram
+io.github.wartybix.Constrict
+org.videolan.VLC

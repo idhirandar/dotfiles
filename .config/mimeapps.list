@@ -1,0 +1,22 @@
+[Added Associations]
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+video/mp4=vlc.desktop;org.videolan.VLC.desktop;
+audio/x-vorbis+ogg=org.gnome.Decibels.desktop;
+video/mp2t=mpv.desktop;
+x-scheme-handler/http=org.gnome.Epiphany.desktop;
+x-scheme-handler/https=org.gnome.Epiphany.desktop;
+text/html=org.gnome.Epiphany.desktop;
+application/xhtml+xml=org.gnome.Epiphany.desktop;
+audio/x-mpegurl=org.videolan.VLC.desktop;
+
+[Default Applications]
+video/mp4=org.videolan.VLC.desktop
+audio/x-vorbis+ogg=org.gnome.Decibels.desktop
+video/mp2t=mpv.desktop
+x-scheme-handler/http=org.gnome.Epiphany.desktop
+x-scheme-handler/https=org.gnome.Epiphany.desktop
+text/html=org.gnome.Epiphany.desktop
+application/xhtml+xml=org.gnome.Epiphany.desktop
+x-scheme-handler/mailspring=Mailspring.desktop
+audio/x-mpegurl=org.videolan.VLC.desktop

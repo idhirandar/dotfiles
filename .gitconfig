@@ -1,3 +1,5 @@
 [user]
 	name = Dhirandar Kumar
 	email = 71155874+idhirandar@users.noreply.github.com
+[push]
+	autoSetupRemote = true
